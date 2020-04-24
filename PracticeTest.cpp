@@ -48,3 +48,31 @@ TEST(PracticeTest, mix_case_palindrome)
     bool actual = obj.isPalindrome("Aa");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, space_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("A a");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, order_correct)
+{
+    sortDescending(1, 2, 3);
+    ASSERT_LE(first, second);
+	ASSERT_LE(second, third);
+}
+
+TEST(PracticeTest, order_reverse)
+{
+    sortDescending(3, 2, 1);
+    ASSERT_LE(first, second);
+	ASSERT_LE(second, third);
+}
+
+TEST(PracticeTest, order_neg_value)
+{
+    sortDescending(-1, 2, 3);
+    ASSERT_LE(first, second);
+	ASSERT_LE(second, third);
+}
