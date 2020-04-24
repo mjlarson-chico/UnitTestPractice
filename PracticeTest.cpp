@@ -59,9 +59,9 @@ TEST(PracticeTest, space_palindrome)
 TEST(PracticeTest, order_correct)
 {	
 	Practice obj;
-	int first = 1;
+	int first = 3;
 	int second = 2;
-	int third = 3;
+	int third = 1;
     obj.sortDescending(first, second, third);
     ASSERT_LE(first, second);
 	ASSERT_LE(second, third);
@@ -70,9 +70,9 @@ TEST(PracticeTest, order_correct)
 TEST(PracticeTest, order_reverse)
 {
 	Practice obj;
-	int first = 3;
+	int first = 1;
 	int second = 2;
-	int third = 1;
+	int third = 3;
     obj.sortDescending(first, second, third);
     ASSERT_LE(first, second);
 	ASSERT_LE(second, third);
