@@ -63,8 +63,8 @@ TEST(PracticeTest, order_correct)
 	int second = 2;
 	int third = 1;
     obj.sortDescending(first, second, third);
-    ASSERT_LE(first, second);
-	ASSERT_LE(second, third);
+    ASSERT_GE(first, second);
+	ASSERT_GE(second, third);
 }
 
 TEST(PracticeTest, order_reverse)
@@ -74,8 +74,8 @@ TEST(PracticeTest, order_reverse)
 	int second = 2;
 	int third = 3;
     obj.sortDescending(first, second, third);
-    ASSERT_LE(first, second);
-	ASSERT_LE(second, third);
+    ASSERT_GE(first, second);
+	ASSERT_GE(second, third);
 }
 
 TEST(PracticeTest, order_neg_value)
@@ -85,8 +85,8 @@ TEST(PracticeTest, order_neg_value)
 	int second = 2;
 	int third = 3;    
     obj.sortDescending(first, second, third);
-    ASSERT_LE(first, second);
-	ASSERT_LE(second, third);
+    ASSERT_GE(first, second);
+	ASSERT_GE(second, third);
 }
 
 TEST(PracticeTest, order_same)
@@ -96,6 +96,6 @@ TEST(PracticeTest, order_same)
 	int second = 44;
 	int third = 44;    
     obj.sortDescending(first, second, third);
-    ASSERT_LE(first, second);
-	ASSERT_LE(second, third);
+    ASSERT_GE(first, second);
+	ASSERT_GE(second, third);
 }
